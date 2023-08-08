@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tachyons@4.12.0/css/tachyons.min.css">
+</head>
+<body class="bg-light-gray flex justify-center items-center vh-100">
+  <div class="bg-white pa4 br3 shadow-2">
+    <h2 class="tc underline">Login</h2>
+    <form class="mt3" action="LoginServlet" method="post">
+      <div class="mb3">
+        <label for="username" class="db fw6">Username</label>
+        <input type="text" id="username" name="username" class="pa2 input-reset ba w-100 br3 b--gold mt2" required>
+      </div>
+      <div class="mb3">
+        <label for="password" class="db fw6">Password</label>
+        <input type="password" id="password" name="password" class="pa2 input-reset ba w-100 br3 b--gold mt2" required>
+      </div>
+      <button type="submit" class="btn btn-primary w-100 br3 pa2 grow bg-gold b--gold white db fw6">Log in</button>
+    </form>
+  </div>
+</body>
+</html>
